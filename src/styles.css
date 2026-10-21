@@ -88,6 +88,12 @@ button:hover {
   color: #525252;
 }
 
+.hint {
+  font-size: 0.85em;
+  color: #525252;
+  text-align: left;
+}
+
 .results {
   list-style: none;
   margin: 0;
@@ -98,20 +104,36 @@ button:hover {
 }
 
 .results li {
-  padding: 0.4em 0.8em;
+  padding: 0.5em 0.8em;
   border-radius: 8px;
+  border: 1px solid #d4d4d4;
   background: #ffffff;
+  color: #0f0f0f;
   text-align: left;
   cursor: pointer;
 }
 
 .results li:hover {
-  border: 1px solid #0d9488;
+  border-color: #0d9488;
+  background: #f0fdfa;
 }
 
 #search-input {
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid #a3a3a3;
+  padding: 0.6em 0.9em;
+  text-align: left;
+}
+
+/* outline dimatikan di aturan global, jadi beri tanda fokus yang jelas */
+#search-input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.25);
+}
+
+#search-input::placeholder {
+  color: #737373;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -125,5 +147,29 @@ button:hover {
   button {
     color: #ffffff;
     background-color: #0f0f0f98;
+  }
+
+  .location,
+  .hint {
+    color: #d4d4d4;
+  }
+
+  .results li {
+    background: #1f1f1f;
+    border-color: #525252;
+    color: #f6f6f6;
+  }
+
+  .results li:hover {
+    background: #134e4a;
+    border-color: #2dd4bf;
+  }
+
+  #search-input {
+    border-color: #737373;
+  }
+
+  #search-input::placeholder {
+    color: #a3a3a3;
   }
 }
