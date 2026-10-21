@@ -20,7 +20,7 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self'; connect-src 'self' ipc: http://ipc.localhost https://api.aladhan.com; style-src 'self' 'unsafe-inline'"
+      "csp": "default-src 'self'; connect-src 'self' ipc: http://ipc.localhost https://api.aladhan.com https://nominatim.openstreetmap.org https://ipapi.co https://ipwho.is; style-src 'self' 'unsafe-inline'"
     }
   },
   "bundle": {

@@ -82,6 +82,38 @@ button:hover {
   font-size: 0.85em;
 }
 
+.location {
+  margin: 0;
+  font-size: 0.9em;
+  color: #525252;
+}
+
+.results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.results li {
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.results li:hover {
+  border: 1px solid #0d9488;
+}
+
+#search-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #f6f6f6;
